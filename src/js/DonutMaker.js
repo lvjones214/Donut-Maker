@@ -24,7 +24,15 @@ class DonutMaker{
     }
     buyAutoClicker(){
         this._autoClickerCount ++;
-        this._totalDonutCount -= 100*(1.1)**(this._autoClickerCount -1);
+        this._totalDonutCount -= this.autoClickerCost;
+    }
+    get autoClickersPurchased(){
+        return this._autoClickerCount;
+    }
+    get autoClickerCost(){
+        let unRoundedCost = 100 *Math.pow(1.1,(this._autoClickerCount -1));
+        this._autoClickerCost = Math.round(unRoundedCost);
+        return this._autoClickerCost;
     }
 }
 

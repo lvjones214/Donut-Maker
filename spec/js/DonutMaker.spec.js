@@ -37,12 +37,25 @@ describe('FEATURE:Be able to purchase the first Auto Clicker with 100 donuts fro
 });
 describe('FEATURE : The cost of each Auto Clicker will go up with each purchase.', () =>{
     describe('Increase the cost of the second Auto Clicker by an additional ten percent.', () => {
+        beforeEach(()=>{
+            underTest = new DonutMaker;
+        });
         it('should increase cost of second AutoClicker by 10%',() =>{
             underTest.buyAutoClicker();
             expect(underTest._autoClickerCount).toBe(1);
             underTest.buyAutoClicker();
             expect(underTest._autoClickerCount).toBe(2);
             expect(underTest._totalDonutCount).toBe(-210);
+        });
+        it('should increase cost of second AutoClicker by 10%',() =>{
+            underTest.buyAutoClicker();
+            expect(underTest._autoClickerCount).toBe(1);
+            underTest.buyAutoClicker();
+            expect(underTest._autoClickerCount).toBe(2);
+            expect(underTest._totalDonutCount).toBe(-210);
+            underTest.buyAutoClicker();
+            expect(underTest._autoClickerCount).toBe(3);
+            expect(underTest._totalDonutCount).toBe(-331);
         });
     })
 })
