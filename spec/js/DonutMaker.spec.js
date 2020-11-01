@@ -182,3 +182,27 @@ describe('I2:F5: The amount the subsequent Donut Multipliers click bonus will go
         });
     });
 });
+describe('I2:F6: The Donut Multipliers click bonus will apply to clicks from the Auto Clicker.', () =>{
+    describe('As a user, I want to see my click investments work together to get me more donuts, so that I can have all the donuts.', () =>{
+        beforeEach(()=>{
+            underTest = new DonutMaker;
+        });
+        it('When an Add Auto Clickers event is executed, increase the value of each Auto Clicker by the amount of the Donut Multiplier.', ()=>{
+            underTest.stashDonutsForTesting();
+            underTest.buyDonutMultiplier();
+            underTest.buyAutoClicker();
+            expect(underTest._donutMultiplierCount).toBe(1);
+            expect(underTest._donutCount).toBe(890)
+            underTest.activateAutoClicker();
+            expect(underTest._donutCount).toBeCloseTo(891.2);
+            underTest.buyDonutMultiplier();
+            expect(underTest._donutCount).toBe(880.2);
+            expect(underTest._donutMultiplierCount).toBe(2);
+            underTest.buyAutoClicker();
+            expect(underTest._donutCount).toBe(770.2);
+            expect(underTest._autoClickerCount).toBe(2);
+            underTest.recordAutoClick();
+            expect(underTest._donutCount).toBeCloseTo(773.08);
+        });
+    });
+});

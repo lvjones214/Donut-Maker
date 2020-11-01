@@ -26,7 +26,11 @@ class DonutMaker {
         }
     }
     recordAutoClick() {
-        this._donutCount++;
+        if(this._donutMultiplierCount ==0){
+            this._donutCount = this._donutCount + 1;
+        } else {
+            this._donutCount = this._donutCount + this._donutMultiplierCount*Math.pow(1.2,this._donutMultiplierCount);
+        }
     }
     get donutCount() {
         return this._donutCount;
@@ -52,7 +56,11 @@ class DonutMaker {
     }
     //AutoClicker Activation
     activateAutoClicker() {
-        this._donutCount = this._donutCount + (this._autoClickerCount);
+        if(this._donutMultiplierCount == 0){
+            this._donutCount = this._donutCount + (this._autoClickerCount);
+        } else {
+            this._donutCount = this._donutCount + this._autoClickerCount*Math.pow(1.2,this._donutMultiplierCount);
+        }
     }
     //DonutMultipliers
     buyDonutMultiplier(){
