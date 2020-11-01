@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 4 Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+
 </head>
 <body>
+    <header>
+        Fred the Baker Baking Company
+        <div class="drodown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href = "./history.html">History</a>
+            <a href = "./marketing.html">Marketing</a>
+            <a href = "./contactUs.html">Contact Us</a>
+        </div>
+    </div>
+    </header>
     <div class="container">
+        <section class = "number-of-donuts">
+            Donut Counter will go here.
+        </section>
+        <button type="submit"> Make a Donut! </button>
+        <section class = "autoclicker-section">
+            Number of AutoClickers will be displayed here.
+            <button type="submit"> Buy an AutoClicker!</button>
+        </section>
+        <section class = "donut-multiplier-count">
+            Number of Donut Multipliers will be displayed here.
+            <button type="submit">Buy a Donut Multiplier!</button>
+        </section>
+
         <div class="anchor"></div>
     </div>
-    <script src="./src/js/app.js"></script>
+        <script src="./src/js/app.js"></script>
 </body>
 </html>
