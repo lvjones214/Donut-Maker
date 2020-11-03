@@ -136,6 +136,8 @@ describe('I2:F2: The cost of each Donut Multiplier will go up with each purchase
             expect(underTest._donutMultiplierCount).toEqual(3);
             expect(underTest._donutMultiplierCost).toBeCloseTo(12.1);
             expect(underTest._donutCount).toBe(966.9);
+            underTest.recordClick();
+            expect(underTest._donutCount).toBeCloseTo(968.628);
         });
     });
 });
@@ -178,7 +180,7 @@ describe('I2:F5: The amount the subsequent Donut Multipliers click bonus will go
             underTest.stashDonutMultipliersForTesting();
             expect(underTest._donutMultiplierCount).toBe(10);
             underTest.recordClick();
-            expect(underTest._donutCount).toBeCloseTo(1061.91736422);
+            expect(underTest._donutCount).toBeCloseTo(1006.192);
         });
     });
 });
@@ -201,8 +203,6 @@ describe('I2:F6: The Donut Multipliers click bonus will apply to clicks from the
             underTest.buyAutoClicker();
             expect(underTest._donutCount).toBe(770.2);
             expect(underTest._autoClickerCount).toBe(2);
-            underTest.recordAutoClick();
-            expect(underTest._donutCount).toBeCloseTo(773.08);
         });
     });
 });

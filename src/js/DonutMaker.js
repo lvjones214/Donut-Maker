@@ -22,7 +22,7 @@ class DonutMaker {
         if(this._donutMultiplierCount == 0){
             this._donutCount = this._donutCount + 1;
         } else {
-            this._donutCount = this._donutCount + this._donutMultiplierCount*Math.pow(1.2,this._donutMultiplierCount);
+            this._donutCount = this._donutCount + Math.pow(1.2,this._donutMultiplierCount);
         }
     }
     recordAutoClick() {
@@ -61,6 +61,7 @@ class DonutMaker {
         } else {
             this._donutCount = this._donutCount + this._autoClickerCount*Math.pow(1.2,this._donutMultiplierCount);
         }
+        
     }
     //DonutMultipliers
     buyDonutMultiplier(){
