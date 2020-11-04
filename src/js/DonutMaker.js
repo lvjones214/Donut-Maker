@@ -35,6 +35,12 @@ class DonutMaker {
     get donutCount() {
         return this._donutCount;
     }
+    get autoClickerCount(){
+        return this._autoClickerCount;
+    }
+    get donutMultiplierCount(){
+        return this._donutMultiplierCount;
+    }
     //AutoClicker cost and purchase
     buyAutoClicker() {
         if (this._autoClickerCount == 0) {
@@ -79,4 +85,4 @@ class DonutMaker {
     }
 
 }
-
+export {DonutMaker}
