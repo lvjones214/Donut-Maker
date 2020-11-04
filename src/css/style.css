@@ -11,7 +11,7 @@ html {
   background-size: cover;
   font-family: 'Hind Siliguri', sans-serif;
 }
-button {
+.dropbtn {
   background-color: pink;
   color: brown;
   padding: 16px;
@@ -49,4 +49,22 @@ background-color: pink;
 }
 .donut-multiplier-count{
 background-color: pink;
+}
+.cookieclicker-link {
+  background-color: pink;
+}
+.donut {
+  background: none;
+}
+.make-donuts-button{
+  background-color: plum;
+  font-size: x-large;
+}
+.buy-donutMultiplier-button {
+  background-color: plum;
+  font-size: x-large;
+}
+.buy-autoclicker-button {
+  background-color: plum;
+  font-size: x-large;
 }

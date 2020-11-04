@@ -7,6 +7,7 @@
     display: grid;
     max-width: 1000px;
     width: 90%;
+    height: 100vh;
     margin: 3rem auto;
 }
 h1 {
@@ -25,13 +26,9 @@ header{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-figure img {
-    display: grid;
-    border-radius: 10px;
-}
 .donut-content{
     display:grid;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 100px auto;
     grid-template-columns: 3fr 1fr;
 }
 .dropdown-content a {
