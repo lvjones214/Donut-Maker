@@ -1,39 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;  
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
 }
-html  {
-    height: 100vh;
-    background-image: url(https://images.pexels.com/photos/3784440/pexels-photo-3784440.jpeg?cs=srgb&dl=pexels-sharon-mccutcheon-3784440.jpg&fm=jpg); 
-    background-size: cover;   
+html {
+  background: url(../images/donutBackground.jpg);
+  background-size: cover;
+  font-family: 'Hind Siliguri', sans-serif;
 }
-.dropbtn{
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {background-color: #ddd;}
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+button {
+  background-color: pink;
+  color: brown;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropbtn {
+  background-color: pink;
+}
+h1 {
+  font-family: 'Abril Fatface', cursive;  
+  font-size: 4rem;
+  background-color: pink;
+}
+.number-of-donuts { 
+background-color: pink;
+}
+.autoclicker-section {
+background-color: pink;
+}
+.donut-multiplier-count{
+background-color: pink;
+}

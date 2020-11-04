@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 4 Project</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="css/layout.css">
 
 </head>
+
 <body>
-    <header>
-        Fred the Baker Baking Company
-        <div class="drodown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <a href = "./history.html">History</a>
-            <a href = "./marketing.html">Marketing</a>
-            <a href = "./contactUs.html">Contact Us</a>
-        </div>
-    </div>
-    </header>
     <div class="container">
-        <section class = "number-of-donuts">
+        <h1>Fred the Baker Baking Company</h1>
+    <header>
+        
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="./history.html">History</a>
+                <a href="./marketing.html">Marketing</a>
+                <a href="./contactUs.html">Contact Us</a>
+            </div>
+        </div>
+        <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank"> A tribute to CookieClicker </a>
+        <div class="dropdown">
+            <button class="dropbtn">About the Developer</button>
+            <div class="dropdown-content">
+                <a href="./history.html">About Lauren</a>
+            </div>
+        </div>
+    </header>
+    <div class = "donut-content">
+        <section class="number-of-donuts">
             Donut Counter will go here.
         </section>
-        <button type="submit"> Make a Donut! </button>
-        <section class = "autoclicker-section">
-            Number of AutoClickers will be displayed here.
-            <button type="submit"> Buy an AutoClicker!</button>
+        <section class="donut-clicker-button">
+            <figure>
+                <img src="/src/images/ChocolateDonut.png" alt="chocolate donut image" height=300px>
+            </figure>
+            <button class='make-donuts-button' type="submit"> Make a Donut! </button>
         </section>
-        <section class = "donut-multiplier-count">
+        <section class="autoclicker-section">
+            Number of AutoClickers will be displayed here.
+            <button class='buy-autoclicker-button' type="submit"> Buy an AutoClicker!</button>
+        </section>
+        <section class="donut-multiplier-count">
             Number of Donut Multipliers will be displayed here.
-            <button type="submit">Buy a Donut Multiplier!</button>
+            <button class='donut-multiplier-button' type="submit">Buy a Donut Multiplier!</button>
         </section>
 
         <div class="anchor"></div>
     </div>
-        <script src="./src/js/app.js"></script>
+    <script src="./src/js/app.js"></script>
 </body>
+
 </html>
