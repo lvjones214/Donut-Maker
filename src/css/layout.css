@@ -8,16 +8,19 @@
     max-width: 1000px;
     width: 90%;
     height: 100vh;
-    margin: 3rem auto;
+    margin: 1rem auto;
 }
 h1 {
     text-align: center;
+    border-radius: 5px;
+    justify-content: center;
 }
 header{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 300px 400px 300px;
+    padding: 5px;
     gap: 20px;
-    align-content: center;
 }
 .dropdown {
     position: relative;
@@ -26,12 +29,24 @@ header{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.donut-content{
-    display:grid;
-    grid-template-rows: 100px auto;
-    grid-template-columns: 3fr 1fr;
-}
+
 .dropdown-content a {
     text-decoration: none;
     display: block;
+}
+.donut-content{
+    display:grid;
+    grid-template-columns: 300px 400px 300px;
+}
+.number-of-donuts-text {
+    display:grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.autoclicker-count-section{
+    display:grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.donut-multiplier-count-text{
+    display:grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }

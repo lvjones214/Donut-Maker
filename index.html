@@ -13,44 +13,75 @@
 <body>
     <div class="container">
         <h1>Fred the Baker Baking Company</h1>
-    <header>
-        
-        <div class="dropdown">
-            <button class="dropbtn">About Us</button>
-            <div class="dropdown-content">
-                <a href="./history.html">History</a>
-                <a href="./marketing.html">Marketing</a>
-                <a href="./contactUs.html">Contact Us</a>
-            </div>
-        </div>
-        <a  class= "cookieclicker-link" href="https://orteil.dashnet.org/cookieclicker/" target="_blank"> A tribute to CookieClicker </a>
-        <div class="dropdown">
-            <button class="dropbtn">About the Developer</button>
-            <div class="dropdown-content">
-                <a href="./history.html">About Lauren</a>
-            </div>
-        </div>
-    </header>
-    <div class = "donut-content">
-        <section class="number-of-donuts">
-            0
-        </section>
-        <section class="donut-clicker-button">
-            <img class= "donut" src="/src/images/ChocolateDonut.png" alt="chocolate donut image" height=300px> 
-            <button class='make-donuts-button' type="submit"> Make a Donut! </button>
-        </section>
-        <section class="autoclicker-count">
-            0
-            <button class='buy-autoclicker-button' type="submit"> Buy an AutoClicker!</button>
-        </section>
-        <section class="donut-multiplier-count">
-            0
-            <button class='buy-donutMultiplier-button' type="submit">Buy a Donut Multiplier!</button>
-        </section>
+        <header>
 
-        <div class="anchor"></div>
-    </div>
-    <script src="/src/js/app.js" type = "module"></script>
+            <div class="dropdown">
+                <button class="dropbtn">About Us</button>
+                <div class="dropdown-content">
+                    <a href="./history.html">History</a>
+                    <a href="./marketing.html">Marketing</a>
+                    <a href="./contactUs.html">Contact Us</a>
+                </div>
+            </div>
+            <button class="cookie-clicker-button click-button">
+                <a class= "cookieclicker-link" href="https://orteil.dashnet.org/cookieclicker/" target="_blank"> The Inspiration </a>
+            </button>
+            <div class="dropdown">
+                <button class="dropbtn">About the Developer</button>
+                <div class="dropdown-content">
+                    <a href="./history.html">About Lauren</a>
+                </div>
+            </div>
+        </header>
+        <div class="donut-content">
+            <section class="number-of-donuts-section">
+            
+               <p>
+                    You have made:
+                </p>
+                <div class="number-of-donuts">
+                    0
+                </div>
+                <p>                
+                    donuts.
+                </p>
+                 <button class="make-donuts-button click-button"> Make a Donut </button>
+                 <div class="donut-image">
+                    <img src="/src/images/ChocolateDonut.png" alt="chocolate donut image " height=300px>
+                </div> </section>
+            <section class="autoclicker-count-section">
+                <p>
+                You have:</p>
+                <div class="autoclicker-count">
+                    0
+                </div>
+                <p>
+                    AutoClickers.
+                </p>
+                <button class="buy-autoclicker-button click-button"> Buy an AutoClicker</button>
+                <div class="autoclicker-cost">
+                    Next AutoClicker Cost: 100 donuts
+                </div>
+            </section>
+            <section class="donut-multiplier-count-section">
+                <p>
+                    You have:
+                </p>
+                <div class="donut-multiplier-count">
+                    0
+                </div>
+                <p>
+                    Donut Multlipliers
+                </p>
+                <button class="buy-donutMultiplier-button click-button">Buy a Donut Multiplier</button>
+
+                <div class="donut-multiplier-cost">
+                    Next Donut Multiplier Cost: 10 donuts
+                </div>
+            </section>
+            <div class="anchor"></div>
+        </div>
+        <script src="/src/js/app.js " type="module"></script>
 </body>
 
 </html>

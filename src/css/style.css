@@ -2,69 +2,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Hind+Siliguri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
 }
+
 html {
-  background: url(../images/donutBackground.jpg);
-  background-size: cover;
-  font-family: 'Hind Siliguri', sans-serif;
+    background: url(../images/donutBackground.jpg);
+    background-size: cover;
+    font-family: 'Hind Siliguri', sans-serif;
 }
-.dropbtn {
-  background-color: pink;
-  color: brown;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.dropdown:hover .dropbtn {
-  background-color: pink;
-}
+
 h1 {
-  font-family: 'Abril Fatface', cursive;  
-  font-size: 4rem;
-  background-color: pink;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
+    background-color: pink;
 }
-.number-of-donuts { 
-background-color: pink;
+
+.dropbtn {
+    background-color: pink;
+    color: brown;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
 }
-.autoclicker-count {
-background-color: pink;
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
-.donut-multiplier-count{
-background-color: pink;
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
 }
-.cookieclicker-link {
-  background-color: pink;
+
+.dropdown-content a:hover {
+    background-color: #ddd;
 }
-.donut {
-  background: none;
+
+.dropdown:hover .dropbtn {
+    background-color: pink;
+}
+
+.click-button {
+    color: brown;
+    background-color: plum;
+    padding: 16px;
+    border: brown;
+    border-radius: 5px;
+}
+
+.cookie-clicker-button {
+    background-color: plum;
+    font-size: 16px;
+    padding: 16px;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.number-of-donuts-section {
+    border: 1px pink;
+    background-color: pink;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.number-of-donuts {
+    font-size: 3rem;
+}
+
+.donut-image {
+    background: none;
 }
 .make-donuts-button{
   background-color: plum;
-  font-size: x-large;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 5px;
 }
+.autoclicker-count-section {
+    border: 1px pink;
+    background-color: pink;
+    width: 150px;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.autoclicker-count {
+    font-size: 3rem;
+}
+
+.donut-multiplier-count-section {
+    border: 1px pink;
+    background-color: pink;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.donut-multiplier-count {
+    font-size: 3rem;
+}
+
+.donut-multiplier-cost {
+    border: 1px pink;
+    background-color: pink;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+}
+
 .buy-donutMultiplier-button {
   background-color: plum;
-  font-size: x-large;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 5px;
 }
+
 .buy-autoclicker-button {
   background-color: plum;
-  font-size: x-large;
+  font-size: 2rem;
+  height: 100px;
+  border-radius: 5px;
+  padding: 5px;
 }
+
+o
