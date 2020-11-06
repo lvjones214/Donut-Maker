@@ -7,7 +7,6 @@
     display: grid;
     max-width: 1000px;
     width: 90%;
-    height: 100vh;
     margin: 1rem auto;
 }
 h1 {
@@ -36,7 +35,7 @@ header{
 }
 .donut-content{
     display:grid;
-    grid-template-columns: 300px 400px 300px;
+    grid-template-columns: 200px 400px 200px 200px;
 }
 .number-of-donuts-text {
     display:grid;

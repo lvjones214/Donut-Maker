@@ -14,7 +14,25 @@
     <div class="container">
         <h1>Fred the Baker Baking Company</h1>
         <header>
-
+            <div class="backdrop"></div>
+            <div class="modal">
+                <div class="modal-actions">
+                    <button type="button" class="exit">X</button>
+                </div>
+                <h1>Developer Bio </h1>
+                <h1 class="name">Stella Law</h1>
+                <figure class="bio-pic">
+                    <img src="/src/images/NewOrleans.jpg">
+                </figure>
+                <p class="bio">I am naturally a puzzle person and enjoy figuring out how things fit together. 
+                    This natural curiousity ultimately led me to pursue a career in full stack software development to build on 12 years of experience in database management. 
+                    I strive to deliver solutions in an efficient manner and in the best way possible. 
+                    Previously, I was able to deliver solutions in a front facing manner and through software development, I want to provide solutions on the ground level.</p>
+                <figure class="socialmedia">
+                <a href="https://stellawlaw.github.io/"><img alt="GitHub" src="/src/images/github.png"></a>
+                <a href="https://www.linkedin.com/in/stellawlaw/"><img alt="LinkedIn" src="/src/images/linkedin.png"></a>
+                </figure>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn">About Us</button>
                 <div class="dropdown-content">
@@ -34,32 +52,33 @@
             </div>
         </header>
         <div class="donut-content">
-            <section class="number-of-donuts-section">
-            
+            <section class = "number-of-donuts-section">
                <p>
                     You have made:
                 </p>
-                <div class="number-of-donuts">
+                <div class = "number-of-donuts">
                     0
                 </div>
                 <p>                
                     donuts.
                 </p>
-                 <button class="make-donuts-button click-button"> Make a Donut </button>
-                 <div class="donut-image">
-                    <img src="/src/images/ChocolateDonut.png" alt="chocolate donut image " height=300px>
-                </div> </section>
-            <section class="autoclicker-count-section">
+                 <button class = "make-donuts-button"> Make Donuts 
+                 </button>
+            </section>
+            <div class = "donut-image">
+                <img src = "/src/images/ChocolateDonut.png" alt = "chocolate donut image " height=300px>
+            </div> 
+            <section class = "autoclicker-count-section">
                 <p>
                 You have:</p>
-                <div class="autoclicker-count">
+                <div class = "autoclicker-count">
                     0
                 </div>
                 <p>
                     AutoClickers.
                 </p>
-                <button class="buy-autoclicker-button click-button"> Buy an AutoClicker</button>
-                <div class="autoclicker-cost">
+                <button class = "buy-autoclicker-button click-button"> Buy an AutoClicker</button>
+                <div class = "autoclicker-cost">
                     Next AutoClicker Cost: 100 donuts
                 </div>
             </section>
@@ -77,6 +96,9 @@
 
                 <div class="donut-multiplier-cost">
                     Next Donut Multiplier Cost: 10 donuts
+                </div>
+                <div class="donut-multiplier-value">
+                    Donut Multiplier Value: 1 
                 </div>
             </section>
             <div class="anchor"></div>

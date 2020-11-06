@@ -6,6 +6,7 @@ class DonutMaker {
             this._autoClickerCost = 100;
             this._donutMultiplierCount = 0;
             this._donutMultiplierCost = 10;
+            this._donutMultiplierValue = 1;
     }
 //Testing
     stashDonutsForTesting() {
@@ -39,25 +40,20 @@ class DonutMaker {
     
 // AutoClicker cost and purchase
     buyAutoClicker() {
-        if (this._autoClickerCount === 0) {
-            this.autoClickerCost = 100;
-        } else {
-            let n = this._autoClickerCount;
-            this._autoClickerCost = Math.round(100 * Math.pow(1.1, n));
-        }
         if (this._donutCount >= this._autoClickerCost) {
             this._donutCount -= this._autoClickerCost;
             this._autoClickerCount++;
         } else {
-// alert("You can't buy another autoClicker yet!");
             this._donutCount = this._donutCount;
         }
-    }
-    get autoClickersPurchased() {
-        return this._autoClickerCount;
+        let n = this._autoClickerCount;
+        this._autoClickerCost = Math.round(100 * Math.pow(1.1, n));
     }
     get autoClickerCount() {
         return this._autoClickerCount;
+    }
+    get autoClickerCost(){
+        return this._autoClickerCost;
     }
 //AutoClicker Activation
     activateAutoClicker() {
@@ -69,17 +65,14 @@ class DonutMaker {
         }
 //DonutMultipliers
     buyDonutMultiplier() {
-        if (this._donutMultiplierCount == 0) {
-            this._donutMultiplierCost = 10;
-        } else {
-            this._donutMultiplierCost = 10 * Math.pow(1.1, this._donutMultiplierCount);
-        }
         if (this._donutCount >= this._donutMultiplierCost) {
             this._donutCount -= this._donutMultiplierCost;
             this._donutMultiplierCount++;
         } else {
             this._donutCount = this._donutCount;
         }
+        this._donutMultiplierCost = 10 * Math.pow(1.1, this._donutMultiplierCount);
+        this._donutMultiplierValue = Math.pow(1.2,this._donutMultiplierCount);
     }
     get donutMultiplierCount() {
         return this._donutMultiplierCount;
@@ -87,6 +80,8 @@ class DonutMaker {
     get donutMultiplierCost() {
         return this._donutMultiplierCost;
     }
+    get donutMultiplierValue() {
+        return this._donutMultiplierValue;
+    }
 }
 export { DonutMaker }
-one
