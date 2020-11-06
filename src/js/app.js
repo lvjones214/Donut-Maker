@@ -26,15 +26,15 @@ const newDonutMaker = new DonutMaker();
 //Make Donuts
 const updateDonutCount = function(donutMaker) {
     const donutCounter = document.querySelector(".number-of-donuts");
-    donutCounter.innerText = donutMaker.donutCount;
-  // updateAutoClickerButton(donutMaker);
-  // updateDonutMultiplierButton(donutMaker);
+    donutCounter.innerText = Math.round(donutMaker.donutCount*10)/10;
+    // updateAutoClickerButton(donutMaker);
 };
 updateDonutCount(newDonutMaker);
 const donutButton = document.querySelector(".make-donuts-button");
 donutButton.addEventListener("click", () => {
     newDonutMaker.recordClick();
     updateDonutCount(newDonutMaker);
+
 });
 
 // function updateAutoClickerButton() {
@@ -44,13 +44,13 @@ donutButton.addEventListener("click", () => {
 //         lightUpBuyAutoClickerButton.classList.toggle("lightUpButton");
 //     }
 // }
-// function updateDonutClickerButton() {
-//     const lightUpBuyDonutMultiplier = document.querySelector(".buy-donutMulitiplier-button");
-//     lightUpBuyDonutMultiplier.classList.add("lightUpButton");
-//     if (donutCount < donutMultiplierCost) {
-//         lightUpBuyDonutMultiplier.classList.toggle("lightUpButton");
-//     }
-// }
+function updateDonutMultiplierButton() {
+    const lightUpBuyDonutMultiplierButton = document.querySelector(".buy-donutMulitiplier-button");
+    lightUpBuyDonutMultiplierButton.classList.add('lightUpButton');
+    if (donutCount < donutMultiplierCost) {
+        lightUpBuyDonutMultiplierButton.classList.toggle('lightUpButton');
+    }
+}
 
 //reset button
 
@@ -63,7 +63,7 @@ const updateAutoClickerCount = function(newDonutMaker) {
 };
 const displayAutoClickerCost = function(newDonutMaker) {
     const autoClickerCost = document.querySelector(".autoclicker-cost");
-    autoClickerCost.innerText = "Next AutoClicker Cost: " + newDonutMaker.autoClickerCost + " donuts";
+    autoClickerCost.innerText = "Next AutoClicker Cost: " + Math.round(newDonutMaker.autoClickerCost*10)/10 + " donuts";
 }
 const buyAutoClicker = document.querySelector(".buy-autoclicker-button");
 buyAutoClicker.addEventListener("click", () => {
@@ -82,11 +82,11 @@ const updateDonutMultiplierCount = function(newDonutMaker) {
 };
 const displayDonutMultiplierCost = function(newDonutMaker) {
     const donutMultiplierCost = document.querySelector(".donut-multiplier-cost");
-    donutMultiplierCost.innerText = "Next Donut Multipler Cost: " + newDonutMaker.donutMultiplierCost + " donuts";
+    donutMultiplierCost.innerText = "Next Donut Multipler Cost: " + Math.round(newDonutMaker.donutMultiplierCost*10)/10 + " donuts";
 }
 const displayDonutMultiplierValue = function(newDonutMaker){
     const displayDonutMultiplierValue = document.querySelector(".donut-multiplier-value");
-    displayDonutMultiplierValue.innerText = "Donut Multiplier Value: " + newDonutMaker.donutMultiplierValue;
+    displayDonutMultiplierValue.innerText = "Donut Multiplier Value: " + Math.round(newDonutMaker.donutMultiplierValue*100)/100;
 }
 const buyDonutMultiplier = document.querySelector(".buy-donutMultiplier-button");
 buyDonutMultiplier.addEventListener("click", () => {
@@ -95,5 +95,6 @@ buyDonutMultiplier.addEventListener("click", () => {
     updateDonutMultiplierCount(newDonutMaker);
     displayDonutMultiplierCost(newDonutMaker);
     displayDonutMultiplierValue(newDonutMaker);
+    updateDonutMultiplierButton(newDonutMaker);
 });
 

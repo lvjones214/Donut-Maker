@@ -70,7 +70,7 @@ h1 {
 .number-of-donuts-section {
     border: 1px pink;
     background-color: pink;
-    width: 150px;
+    width: 200px;
     height: 100px;
     border-radius: 5px;
     padding: 5px;
@@ -78,97 +78,121 @@ h1 {
 
 .number-of-donuts {
     font-size: 3rem;
+    text-align: right;
 }
 
 .donut-image {
     background: none;
 }
-.make-donuts-button{
-  color: brown;
+
+.make-donuts-button {
+    color: brown;
     background-color: plum;
     padding: 16px;
     border: brown;
-    border-radius: 5px;background-color: plum;
-  font-size: 2rem;
-  border-radius: 5px;
-  padding: 5px;
+    border-radius: 5px;
+    background-color: plum;
+    font-size: 2rem;
+    border-radius: 5px;
+    width: 175px;
+    padding: 5px;
 }
+
 .autoclicker-count-section {
     border: 1px pink;
     background-color: pink;
-    width: 150px;
+    width: 175px;
     border-radius: 5px;
-    height: 150px;
+    height: 100px;
 }
 
 .autoclicker-count {
     font-size: 3rem;
+    text-align: right;
 }
-.autoclicker-cost{
-  background-color: pink;
-  border-radius: 5px;
+
+.autoclicker-cost {
+    background-color: pink;
+    border-radius: 5px;
+    height: 50px;
 }
 
 .donut-multiplier-count-section {
     border: 1px pink;
     background-color: pink;
     border-radius: 5px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
 }
 
 .donut-multiplier-count {
     font-size: 3rem;
+    text-align: right;
 }
 
 .donut-multiplier-cost {
     border: 1px pink;
     background-color: pink;
-    width: 150px;
+    width: 200px;
     height: 50px;
+    border-radius: 5px;
     font-size: 1rem;
 }
 
+.donut-multiplier-value {
+    background-color: pink;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+
 .buy-donutMultiplier-button {
-  background-color: plum;
-  font-size: 2rem;
-  border-radius: 5px;
-  padding: 5px;
-  opacity: 0.45;
+    background-color: plum;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+    opacity: 0.45;
 }
 
 .buy-autoclicker-button {
-  background-color: plum;
-  font-size: 2rem;
-  height: 100px;
-  border-radius: 5px;
-  padding: 5px;
-  opacity:0.45;
+    background-color: plum;
+    font-size: 2rem;
+    height: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0.45;
 }
 
-.lightUpButton{
-  opacity:1;
-}
-.backdrop{
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  background: rgba(0, 0,0, 0.5);  
-  z-index: 100;
+.lightUpButton {
+    opacity: 1;
 }
 
-.modal{
-  display: none;
-  position: fixed;
-  z-index: 200;
-  top: 20%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  background: rgba(207, 207, 250, 0.945);
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.568);
-  padding: 1rem;
+.backdrop {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background: rgba(207, 207, 250, 0.945);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.568);
+    padding: 1rem;
+}
+
+padding: 1rem;
+
 }
