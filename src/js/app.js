@@ -3,22 +3,22 @@ import {
 } from "/src/js/DonutMaker.js"
 
 //Modal Developer Information
-// const developerButton = document.getElementById("developer-information");
-// const modal = document.querySelector(".modal");
-// const backdrop = document.querySelector(".backdrop");
+const developerButton = document.getElementById("developer-information");
+const modal = document.querySelector(".modal");
+const backdrop = document.querySelector(".backdrop");
 
-// function closeModal() {
-//     modal.style.display = "none";
-//     backdrop.style.display = "none";
-// }
-// developerButton.addEventListener("click", function() {
-//     modal.style.display = "block";
-//     backgrop.style.display = "block";
-// });
+function closeModal() {
+    modal.style.display = "none";
+    backdrop.style.display = "none";
+}
+developerButton.addEventListener("click", function() {
+    modal.style.display = "block";
+    backdrop.style.display = "block";
+});
 
-// const exitButton = document.querySelector(".exit");
-// exitButton.addEventListener("click", closeModal);
-// backdrop.addEventListener("click", closeModal);
+const exitButton = document.querySelector(".exit");
+exitButton.addEventListener("click", closeModal);
+backdrop.addEventListener("click", closeModal);
 
 //Modal Company Information
 // const companyInfoButton = document.getElementById("company-information");
