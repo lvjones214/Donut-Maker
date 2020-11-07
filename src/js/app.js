@@ -3,22 +3,40 @@ import {
 } from "/src/js/DonutMaker.js"
 
 //Modal Developer Information
-// const developerButton = document.querySelector(".developer-info-list");
+// const developerButton = document.getElementById("developer-information");
 // const modal = document.querySelector(".modal");
 // const backdrop = document.querySelector(".backdrop");
 
-// function closeModal(){
-//     modal.style.display="none";
+// function closeModal() {
+//     modal.style.display = "none";
 //     backdrop.style.display = "none";
 // }
-// developerButton.addEventListener("click", function(){
+// developerButton.addEventListener("click", function() {
 //     modal.style.display = "block";
 //     backgrop.style.display = "block";
 // });
 
 // const exitButton = document.querySelector(".exit");
-// exitButton.addEventListener("click",closeModal);
+// exitButton.addEventListener("click", closeModal);
 // backdrop.addEventListener("click", closeModal);
+
+//Modal Company Information
+// const companyInfoButton = document.getElementById("company-information");
+// const modal2 = document.querySelector(".modal2");
+// const backdrop2 = document.querySelector(".backdrop2");
+
+// function closeModal2() {
+//     modal2.style.display = "none";
+//     backdrop2.style.display = "none";
+// }
+// companyInfoButton.addEventListener("click", function() {
+//     modal2.style.display = "block";
+//     backgrop2.style.display = "block";
+// });
+
+// const exitButton2 = document.querySelector(".exit2");
+// exitButton2.addEventListener("click", closeModal2);
+// backdrop2.addEventListener("click", closeModal2);
 
 
 const newDonutMaker = new DonutMaker();
@@ -38,10 +56,10 @@ donutButton.addEventListener("click", () => {
 });
 
 function updateAutoClickerButton(donutMaker) {
-    const lightUpBuyAutoClickerButton = document.querySelector(".buy-autoclicker-button");
-    lightUpBuyAutoClickerButton.classList.add("lightUpBotton");
-    if (donutMaker.donutCount > donutMaker.autoClickerCost) {
-        lightUpBuyAutoClickerButton.classList.toggle("lightUpButton");
+    const grayOutBuyAutoClickerButton = document.querySelector(".buy-autoclicker-button");
+    grayOutBuyAutoClickerButton.classList.add("gray-out-button");
+    if (donutMaker.donutCount >= donutMaker.autoClickerCost) {
+        grayOutBuyAutoClickerButton.classList.toggle("gray-out-button");
     }
 }
 
@@ -54,6 +72,10 @@ function updateDonutMultiplierButton(donutMaker) {
 }
 
 //reset button
+// const resetButton = document.getElementById("reset-button");
+// resetButton.addEventListener("click", function() {
+//     donutMaker = new DonutMaker;
+// });
 
 
 

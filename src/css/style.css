@@ -162,6 +162,9 @@ h1 {
     height: 100px;
     border-radius: 5px;
     padding: 5px;
+}
+
+.gray-out-button {
     opacity: 0.45;
 }
 
@@ -169,7 +172,7 @@ h1 {
     opacity: 1;
 }
 
-.backdrop {
+*/ .backdrop {
     display: none;
     position: fixed;
     width: 100%;
