@@ -21,22 +21,22 @@ exitButton.addEventListener("click", closeModal);
 backdrop.addEventListener("click", closeModal);
 
 //Modal Company Information
-// const companyInfoButton = document.getElementById("company-information");
-// const modal2 = document.querySelector(".modal2");
-// const backdrop2 = document.querySelector(".backdrop2");
+const companyInfoButton = document.getElementById("company-information");
+const modal2 = document.querySelector(".modal2");
+const backdrop2 = document.querySelector(".backdrop2");
 
-// function closeModal2() {
-//     modal2.style.display = "none";
-//     backdrop2.style.display = "none";
-// }
-// companyInfoButton.addEventListener("click", function() {
-//     modal2.style.display = "block";
-//     backgrop2.style.display = "block";
-// });
+function closeModal2() {
+    modal2.style.display = "none";
+    backdrop2.style.display = "none";
+}
+companyInfoButton.addEventListener("click", function() {
+    modal2.style.display = "block";
+    backdrop2.style.display = "block";
+});
 
-// const exitButton2 = document.querySelector(".exit2");
-// exitButton2.addEventListener("click", closeModal2);
-// backdrop2.addEventListener("click", closeModal2);
+const exitButton2 = document.querySelector(".exit2");
+exitButton2.addEventListener("click", closeModal2);
+backdrop2.addEventListener("click", closeModal2);
 
 
 const newDonutMaker = new DonutMaker();
