@@ -41,11 +41,17 @@ backdrop2.addEventListener("click", closeModal2);
 
 const newDonutMaker = new DonutMaker;
 
-// //start/reset button
-// const resetButton = document.querySelector(".reset-game");
-// resetButton.addEventListener("click", function() {
-//     newDonutMaker.constructor;
-// });
+//reset button
+const resetButton = document.querySelector(".reset-game");
+resetButton.addEventListener("click", function() {
+    newDonutMaker.reset();
+    updateDonutCount(newDonutMaker);
+    updateAutoClickerCount(newDonutMaker);
+    displayAutoClickerCost(newDonutMaker);
+    updateDonutMultiplierCount(newDonutMaker);
+    displayDonutMultiplierCost(newDonutMaker);
+    displayDonutMultiplierValue(newDonutMaker);
+});
 
 
 //Make Donuts
