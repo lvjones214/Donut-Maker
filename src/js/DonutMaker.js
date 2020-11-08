@@ -16,7 +16,17 @@ class DonutMaker {
         this._autoClickerCount += 10;
     }
     stashDonutMultipliersForTesting() {
-            this._donutMultiplierCount += 10;
+        this._donutMultiplierCount += 10;
+    }
+
+    //Reset Donut Maker
+    reset() {
+            this._donutCount = 0;
+            this._autoClickerCount = 0;
+            this._autoClickerCost = 100;
+            this._donutMultiplierCount = 0;
+            this._donutMultiplierCost = 10;
+            this._donutMultiplierValue = 1;
         }
         //Clickers
     recordClick() {
