@@ -58,13 +58,17 @@ h1 {
     border-radius: 5px;
 }
 
-.cookie-clicker-button {
-    background-color: plum;
-    font-size: 16px;
+.reset-game {
     padding: 16px;
-    height: 50px;
-    width: 150px;
+    border: brown;
+    color: red;
+    background-color: white;
     border-radius: 5px;
+    font-size: 1rem;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    font-weight: bold;
 }
 
 .number-of-donuts-section {
@@ -172,7 +176,7 @@ h1 {
     opacity: 1;
 }
 
-*/ .backdrop {
+.backdrop {
     display: none;
     position: fixed;
     width: 100%;
@@ -196,7 +200,7 @@ h1 {
     padding: 1rem;
 }
 
-*/ .backdrop2 {
+.backdrop2 {
     display: none;
     position: fixed;
     width: 100%;

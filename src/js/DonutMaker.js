@@ -25,9 +25,9 @@ class DonutMaker {
         } else if (this._autoClickerCount === 0 && this._donutMultiplierCount !== 0) {
             this._donutCount = this._donutCount + Math.pow(1.2, this._donutMultiplierCount);
         } else if (this._autoClickerCount !== 0 && this._donutMultiplierCount === 0) {
-            this._donutCount = this._donutCount + this._autoClickerCount;
+            this._donutCount = this._donutCount + 1 + this._autoClickerCount;
         } else {
-            this._donutCount = this._donutCount + this._autoClickerCount * Math.pow(1.2, this._donutMultiplierCount);
+            this._donutCount = this._donutCount + (this._autoClickerCount + 1) * Math.pow(1.2, this._donutMultiplierCount);
         }
     }
     recordAutoClick() {

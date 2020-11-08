@@ -39,7 +39,14 @@ exitButton2.addEventListener("click", closeModal2);
 backdrop2.addEventListener("click", closeModal2);
 
 
-const newDonutMaker = new DonutMaker();
+const newDonutMaker = new DonutMaker;
+
+// //start/reset button
+// const resetButton = document.querySelector(".reset-game");
+// resetButton.addEventListener("click", function() {
+//     newDonutMaker.constructor;
+// });
+
 
 //Make Donuts
 const updateDonutCount = function(donutMaker) {
@@ -70,13 +77,6 @@ function updateDonutMultiplierButton(donutMaker) {
         lightUpBuyDonutMultiplierButton.classList.toggle('lightUpButton');
     }
 }
-
-//reset button
-// const resetButton = document.getElementById("reset-button");
-// resetButton.addEventListener("click", function() {
-//     donutMaker = new DonutMaker;
-// });
-
 
 
 //AutoClicker
